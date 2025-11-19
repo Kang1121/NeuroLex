@@ -1,0 +1,23 @@
+# EEG Report Preprocessing Requirements
+
+# Core dependencies
+nltk>=3.8.1
+tqdm>=4.65.0
+numpy>=1.24.0
+
+# T5 Training dependencies
+torch>=2.0.0
+transformers>=4.30.0
+tensorboard>=2.13.0
+sentencepiece>=0.1.99
+wandb>=0.15.0  # For experiment tracking and monitoring
+
+# LLM-assisted preprocessing (for preprocess_llm.py)
+openai>=1.0.0
+
+# Async version (for preprocess_llm_async.py) - faster processing
+tqdm>=4.65.0  # already included above, but async version needs tqdm
+
+# Optional: for advanced processing
+# spacy>=3.5.0
+
